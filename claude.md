@@ -1,35 +1,29 @@
-# Project Constitution: Stéphane Plombier Clim Elec (Tel Aviv)
+# Project Constitution: Stéphane Plombier Clim Elec (Tel Aviv - CORRECTED)
 
 ## 🎯 North Star
-Create a premium, multi-service landing page in French/English/Hebrew for "Stéphane Plombier Clim Elec", reflecting his high-end professional reputation in Tel Aviv.
+Rebuild the premium multi-service landing page for **Stephane Plombier Clim Elec Tel Aviv**, ensuring 100% accuracy with the official Israeli business profile on Nahalat Binyamin street.
 
 ## 🛠️ Data Schema (gemini.md)
 ```json
 {
   "business": {
     "name": "Stephane Plombier Clim Elec Tel Aviv",
-    "owner": "Stéphane",
     "phone": "+972 53-208-8301",
     "email": "stephane.ossek@gmail.com",
-    "location": "Nahalat Binyamin St 159, Tel Aviv-Yafo",
-    "specialties": ["Plomberie", "Climatisation", "Électricité", "Dépannage 24/7"],
-    "language": "fr"
-  },
-  "visuals": {
-    "primary_color": "#0047AB",
-    "accent_color": "#FFD700",
-    "logo_desc": "Gold/Blue professional technician logo"
+    "address": "Nahalat Binyamin St 159, Tel Aviv-Yafo",
+    "specialties": ["Plomberie / אינסטלציה", "Climatisation / מיזוג אוויר", "Électricité / חשמל", "Rénovation / שיפוץ"],
+    "primary_language": "fr",
+    "secondary_language": "he"
   }
 }
 ```
 
 ## ⚖️ Behavioral Rules
-1. **Multilingual Support:** The page should lead with French but offer English/Hebrew toggles or sections.
-2. **Premium Professionalism:** Highlight the "5.0-star" rating and testimonials from French-speaking residents of Tel Aviv.
-3. **Emergency Focus:** Prominent 24/7 dépannage CTA.
-4. **Clean Code:** Use the established high-performance HTML/CSS/JS structure.
+1. **Israeli Urban Context:** All visuals must reflect Tel Aviv's modern urban environment.
+2. **French Community Focus:** Tailor copy for French expats while respecting the Israeli location.
+3. **Bilingual Sensitivity:** Major headings should feature Hebrew secondary tags to match actual branding.
+4. **Social Proof Integrity:** Use real reviews from Samantha, Annie, and Myriam.
 
 ## 🏗️ Architectural Invariants
-- Project root: `/Users/soumitrohalder/Documents/Plumbing Sites/Stephane-Plombier-Clim-Elec/`
-- Assets in `images/`
-- SOPs in `architecture/`
+- Root: `/Users/soumitrohalder/Documents/Plumbing Sites/Stephane-Plombier-Clim-Elec/`
+- Tech Stack: HTML/CSS/JS (Vanilla, Premium)

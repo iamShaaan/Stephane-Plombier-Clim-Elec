@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephane Plombier Clim Elec Tel Aviv - Expert Dépannage 24/7</title>
-    <meta name="description" content="Expert en Plomberie, Climatisation et Électricité à Tel Aviv. Service de dépannage 24/7, installation et rénovation. Travail soigné et professionnel.">
+    <meta name="description" content="Expert Technicien à Tel Aviv : Plomberie, Climatisation, Électricité et Rénovation. Service professionnel pour la communauté francophone. Dépannage 24/7.">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&family=Assistant:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <div class="top-bar">
-            <div class="container">
-                <span><i class="fas fa-bolt"></i> Dépannage Urgent 24/7</span>
-                <span><i class="fas fa-location-dot"></i> Tel Aviv & District centre</span>
+            <div class="container flex-between">
+                <div><i class="fas fa-bolt"></i> Dépannage Urgent 24/7</div>
+                <div class="top-address"><i class="fas fa-location-dot"></i> Nahalat Binyamin 159, Tel Aviv</div>
             </div>
         </div>
         <nav>
             <div class="container nav-flex">
                 <div class="logo">
-                   <img src="images/logo.png" alt="Stephane Logo" id="main-logo">
-                   <span>STEPHANE</span><span class="logo-accent">DEPANNAGE</span>
+                   <img src="images/logo.png" alt="Stephane Logo" class="logo-img">
+                   <div class="logo-text">
+                       <span>STEPHANE</span><span class="logo-accent">TEL AVIV</span>
+                       <small>Plombier • Clim • Elec</small>
+                   </div>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">À Propos</a></li>
                     <li><a href="#testimonials">Avis</a></li>
-                    <li><a href="#contact" class="nav-cta">Contactez-nous</a></li>
+                    <li><a href="#contact" class="nav-cta">Urgence Call</a></li>
                 </ul>
                 <div class="menu-toggle" id="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -43,12 +46,13 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container hero-content">
-                <div class="premium-badge">Expert Certifié 5 Étoiles</div>
-                <h1>Solutions Professionnelles en <span class="highlight">Plomberie & Climatisation</span></h1>
-                <p>Expertise complète en électricité et rénovation. Nous intervenons rapidement à Tel Aviv pour tous vos besoins de dépannage.</p>
+                <div class="premium-badge">Service Professionnel à Tel Aviv</div>
+                <h1>Expert <span class="highlight">Plomberie & Climatisation</span></h1>
+                <h2 class="sub-headline">Technicien Qualifié • אינסטלציה ומיזוג אוויר</h2>
+                <p>Spécialiste du dépannage et de la rénovation pour les particuliers et entreprises à Tel Aviv. Un travail soigné, honnête et rapide.</p>
                 <div class="hero-btns">
-                    <a href="tel:+972532088301" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Appeler Stéphane</a>
-                    <a href="#contact" class="btn btn-outline">Demander un Devis</a>
+                    <a href="tel:+972532088301" class="btn btn-primary"><i class="fas fa-phone-alt"></i> 053-208-8301</a>
+                    <a href="https://wa.me/972532088301" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -57,50 +61,55 @@
         <section id="services" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Nos Domaines d'Expertise</h2>
-                    <p>Un seul interlocuteur pour tous vos besoins techniques à domicile.</p>
+                    <h2>Nos Services • השירותים שלנו</h2>
+                    <p>Une expertise complète pour votre confort à Tel Aviv.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-faucet"></i></div>
                         <h3>Plomberie</h3>
-                        <p>Recherche de fuites, débouchage, installation de sanitaires et chauffe-eau.</p>
+                        <div class="hebrew-tag">אינסטלציה</div>
+                        <p>Détection de fuites, débouchage, installation de sanitaires et chauffe-eau électriques.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-wind"></i></div>
                         <h3>Climatisation</h3>
-                        <p>Installation, entretien et dépannage de tous types de climatisations.</p>
+                        <div class="hebrew-tag">מיזוג אוויר</div>
+                        <p>Installation, recharge de gaz et réparation de systèmes de climatisation toutes marques.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-plug-circle-bolt"></i></div>
                         <h3>Électricité</h3>
-                        <p>Mise aux normes, dépannage de tableaux électriques et éclairage.</p>
+                        <div class="hebrew-tag">חשמל</div>
+                        <p>Dépannage de tableaux électriques, mise aux normes et installations domestiques.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-hammer"></i></div>
                         <h3>Rénovation</h3>
-                        <p>Projets de rénovation complète de salles de bain et cuisines.</p>
+                        <div class="hebrew-tag">שיפוץ כללי</div>
+                        <p>Rénovation complète de salles de bain, cuisines et travaux de peinture soignés.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About / Volunteer Spirit -->
+        <!-- About Section -->
         <section id="about" class="section light-bg">
             <div class="container about-flex">
                 <div class="about-image">
-                    <img src="images/stephane_pro.png" alt="Stéphane - Expert Technicien">
+                    <img src="images/stephane_pro.png" alt="Stéphane - Expert Technicien Tel Aviv">
                 </div>
                 <div class="about-content">
-                    <h2>Pourquoi Choisir Stéphane ?</h2>
-                    <p>Avec des années d'expérience au service de la communauté française de Tel Aviv, je m'engage à fournir un travail de haute qualité, propre et transparent.</p>
+                    <h2>Votre Technicien de Confiance</h2>
+                    <p>Basé sur Nahalat Binyamin, j'interviens dans tout le centre d'Israël pour apporter des solutions techniques durables à la communauté francophone et locale.</p>
+                    <p>Mon engagement : un diagnostic précis, un tarif transparent et un chantier toujours propre. Votre satisfaction est ma priorité absolue.</p>
                     <ul class="check-list">
-                        <li><i class="fas fa-check"></i> Ponctualité et Efficacité</li>
-                        <li><i class="fas fa-check"></i> Devis Clair et sans surprise</li>
-                        <li><i class="fas fa-check"></i> Matériel de pointe pour diagnostics précis</li>
-                        <li><i class="fas fa-check"></i> Disponible 24h/24 pour les urgences</li>
+                        <li><i class="fas fa-check"></i> Expertise Multidisciplinaire</li>
+                        <li><i class="fas fa-check"></i> Ponctualité Garantie</li>
+                        <li><i class="fas fa-check"></i> Devis Gratuits</li>
+                        <li><i class="fas fa-check"></i> Service 24h/24 en Urgence</li>
                     </ul>
-                    <a href="tel:+972532088301" class="btn btn-primary">Parler à un Expert</a>
+                    <a href="tel:+972532088301" class="btn btn-primary">Appeler Maintenant</a>
                 </div>
             </div>
         </section>
@@ -109,24 +118,24 @@
         <section id="testimonials" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Avis de nos Clients</h2>
-                    <p>La satisfaction de nos clients est notre meilleure publicité.</p>
+                    <h2>Avis Vérifiés Google</h2>
+                    <p>Reconnu pour la qualité de notre service à Tel Aviv.</p>
                 </div>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         <p>"Hyper pro, efficace et de très bon conseil pour un dépannage."</p>
-                        <div class="client-name">- Zia</div>
+                        <div class="client-name">- Samantha</div>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p>"Tres professionnel, gentil et travail propre. Je recommande vivement."</p>
-                        <div class="client-name">- Katia D</div>
+                        <p>"Très professionnel, gentil et travail propre. Je recommande vivement."</p>
+                        <div class="client-name">- Annie</div>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p>"Honnête et arrive à l'heure. C'est rare et appréciable."</p>
-                        <div class="client-name">- Moshé B</div>
+                        <p>"Travail de qualité, ponctuel et honnête. Un vrai plaisir d'avoir un technicien aussi sérieux."</p>
+                        <div class="client-name">- Myriam</div>
                     </div>
                 </div>
             </div>
@@ -137,37 +146,38 @@
             <div class="container">
                 <div class="contact-card">
                     <div class="contact-info">
-                        <h2>Prêt à démarrer votre projet ?</h2>
-                        <p>Contactez-nous pour une intervention immédiate ou un devis gratuit.</p>
+                        <h2>Besoin d'une intervention ?</h2>
+                        <p>Stéphane est à votre écoute pour toute question ou demande urgente.</p>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <span>Téléphone</span>
+                                <span>Téléphone / WhatsApp</span>
                                 <p>053-208-8301</p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-location-arrow"></i>
                             <div>
-                                <span>Email</span>
-                                <p>stephane.ossek@gmail.com</p>
+                                <span>Zone d'intervention</span>
+                                <p>Tel Aviv, Ramat Gan, Givatayim, Herzliya</p>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
-                            <input type="text" name="name" placeholder="Votre Nom" required>
+                            <input type="text" name="name" placeholder="Nom Complet" required>
                             <input type="tel" name="phone" placeholder="Téléphone" required>
                         </div>
                         <select name="service" required>
-                            <option value="" disabled selected>Service souhaité</option>
+                            <option value="" disabled selected>Service demandé</option>
                             <option value="plomberie">Plomberie</option>
                             <option value="clim">Climatisation</option>
                             <option value="elec">Électricité</option>
-                            <option value="urgence">Dépannage Urgent</option>
+                            <option value="renovation">Rénovation</option>
+                            <option value="urgence">Urgence Dépannage</option>
                         </select>
-                        <textarea name="message" placeholder="Détaillez votre besoin..." required></textarea>
-                        <button type="submit" class="btn btn-primary full-width">Envoyer la demande</button>
+                        <textarea name="message" placeholder="Votre message..." required></textarea>
+                        <button type="submit" class="btn btn-primary full-width">Envoyer le message</button>
                     </form>
                 </div>
             </div>
@@ -176,15 +186,24 @@
 
     <footer>
         <div class="container footer-content">
-            <div class="footer-logo">STEPHANE<span>DEPANNAGE</span></div>
-            <p>&copy; 2026 Stephane Plombier Clim Elec Tel Aviv. Tous droits réservés.</p>
+            <div class="footer-logo">STEPHANE<span>TEL AVIV</span></div>
+            <p>Nahalat Binyamin St 159, Tel Aviv-Yafo • 053-208-8301</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/972532088301" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Stephane Plombier Clim Elec. Experts Technique en Israël.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/972532088301" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
 
     <script src="script.js"></script>
 </body>
