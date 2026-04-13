@@ -5,6 +5,10 @@ const navLinks = document.querySelector('.nav-links');
 if (mobileMenu) {
     mobileMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+        // Toggle Icon
+        const icon = mobileMenu.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
     });
 }
 
@@ -16,19 +20,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
-                target.scrollIntoView({
+                // Adjust for sticky header
+                const headerOffset = 100;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
+
                 // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
+                    const icon = mobileMenu.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
                 }
             }
         }
     });
 });
 
-// Form Submission (Simulated)
+// Form Submission (Simulated with Hebrew Feedback)
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -37,17 +51,12 @@ if (contactForm) {
         const originalText = submitBtn.innerText;
         
         submitBtn.disabled = true;
-        submitBtn.innerText = 'Envoi en cours...';
+        submitBtn.innerText = 'שולח...';
 
-        // Connect to n8n Webhook if configured
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData.entries());
-        data.timestamp = new Date().toISOString();
-        data.source = 'stephane-iz-lp';
-
-        // Local Success Message
+        // Simulate Network Delay
         setTimeout(() => {
-            alert('Merci ! Stéphane a bien reçu votre demande et vous contactera rapidement.');
+            // Success Message in Hebrew
+            alert('תודה! ההודעה התקבלה בהצלחה. סטפן יחזור אליך בהקדם.');
             contactForm.reset();
             submitBtn.disabled = false;
             submitBtn.innerText = originalText;
@@ -55,8 +64,9 @@ if (contactForm) {
     });
 }
 
-// Scroll Reveal for Section headers
-const observer = new IntersectionObserver((entries) => {
+// Reveal on Scroll Logic
+const revealElements = document.querySelectorAll('.service-card, .about-content, .testimonial-card, .section-header');
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
@@ -65,9 +75,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.section-header, .service-card').forEach(el => {
+revealElements.forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease-out';
-    observer.observe(el);
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)';
+    revealObserver.observe(el);
 });
